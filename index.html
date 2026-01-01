@@ -4,14 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arnab Pandey - Portfolio</title>
+    <title>Arnab Pandey | Portfolio</title>
 
-    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/1005/1005141.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;500;700;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.54/build/spline-viewer.js"></script>
+
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -19,22 +24,19 @@
 
     <header class="main-header">
         <div class="container">
-            <a href="#hero" class="logo">Arnab Pandey</a>
-            <nav class="main-nav" id="main-nav">
+            <a href="#hero" class="logo">Arnab<span style="color:var(--neon-cyan)">.</span></a>
+
+            <nav class="main-nav">
                 <ul id="main-nav-list">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                            <i class="bi bi-moon-fill"></i>
-                        </button>
-                    </li>
                 </ul>
             </nav>
-            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Menu">
                 <i class="bi bi-list"></i>
             </button>
         </div>
@@ -42,292 +44,121 @@
 
     <main>
         <section id="hero">
-            <div class="container">
-                <h1 class="fade-in">Hi, This side <span style="color:cornflowerblue;">Arnab Pandey</span></h1>
-                <p class="fade-in" style="animation-delay: 200ms;">A first-year Computer Science student, vibe coder, and game dev enthusiast.</p>
-                <a href="https://github.com/anar291" target="_blank" class="cta-button fade-in" style="animation-delay: 400ms;">View My Work</a>
+            <div class="hero-3d-bg fade-in">
+                <spline-viewer url="https://prod.spline.design/6WqY96i93024s857/scene.splinecode"></spline-viewer>
+            </div>
+
+            <div class="container hero-content">
+                <div class="hero-glass-card fade-in" style="animation-delay: 200ms;">
+                    <p style="font-size: 1.1rem; color: var(--neon-cyan); margin-bottom: 0.5rem;">Hello World, I am</p>
+                    <h1 class="gradient-text-hero">Arnab Pandey</h1>
+
+                    <div class="typing-wrapper">
+                        <span class="static-text">> </span>
+                        <span class="dynamic-text"></span><span class="cursor">_</span>
+                    </div>
+
+                    <p class="hero-desc">
+                        First-year B.Tech CS Student. Building the future with Python, AI, and Modern Web Technologies.
+                    </p>
+
+                    <div class="hero-btns">
+                        <a href="#projects" class="cta-button primary-btn">View Code</a>
+                        <a href="#contact" class="cta-button outline-btn">Contact Me</a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="about" class="hidden-fade">
             <div class="container">
                 <h2>About Me</h2>
-                <p style="max-width: 800px; margin: 0 auto; text-align: center;">
-                    Hello, This side Arnab Pandey, I am a B-Tech CS-(Ai/Ml) student at Medhavi Skills University. I have a profound interest in transforming complex problems into elegant automation with a deep proficiency in Python. I'm a passionate developer exploring the world of Game Development and Web Technologies.
-                </p>
+                <div class="hero-glass-card" style="margin: 0 auto; text-align: center;">
+                    <p>
+                        I am a 17-year-old developer based in India. Currently pursuing B.Tech in CS (AI/ML).
+                        I don't just write code; I build solutions. From <strong>Python Automation</strong> to
+                        <strong>Full Stack Web Apps</strong>, I love turning complex logic into smooth experiences.
+                    </p>
+                </div>
             </div>
         </section>
 
         <section id="skills" class="hidden-fade">
             <div class="container">
-                <h2>My Skills</h2>
+                <h2>Tech Stack</h2>
 
-                <h3 class="skill-category-title">Technical Stack</h3>
-                <div class="skills-grid">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-filetype-html"></i></div>
-                            <div class="flip-card-back"><h3>HTML5</h3><p>Structuring the Web</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-filetype-css"></i></div>
-                            <div class="flip-card-back"><h3>CSS3</h3><p>Styling & Design</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-filetype-js"></i></div>
-                            <div class="flip-card-back"><h3>JavaScript</h3><p>Interactivity</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-filetype-tsx"></i></div>
-                            <div class="flip-card-back"><h3>TypeScript</h3><p>Typed JS</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-filetype-py"></i></div>
-                            <div class="flip-card-back"><h3>Python</h3><p>Logic & AI/ML</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-file-code"></i></div>
-                            <div class="flip-card-back"><h3>Dart-Flutter</h3><p>App Development</p></div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="skill-category-title" style="margin-top: 3rem;">Design & Frameworks</h3>
-                <div class="skills-grid">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-bootstrap"></i></div>
-                            <div class="flip-card-back"><h3>Bootstrap</h3><p>Responsive CSS</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-wind"></i></div>
-                            <div class="flip-card-back"><h3>Tailwind</h3><p>Utility CSS</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-display"></i></div>
-                            <div class="flip-card-back"><h3>Web Dev</h3><p>Full Stack Vibe</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-controller"></i></div>
-                            <div class="flip-card-back"><h3>Game Dev</h3><p>Unity & C#</p></div>
-                        </div>
-                    </div>
-                </div>
+                <h3 class="skill-category-title">Core Technologies</h3>
+                <div class="skills-grid" id="core-skills-container"></div>
 
                 <h3 class="skill-category-title" style="margin-top: 3rem;">Tools & Vibe</h3>
-                <div class="skills-grid">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-git"></i></div>
-                            <div class="flip-card-back"><h3>Git</h3><p>Version Control</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-github"></i></div>
-                            <div class="flip-card-back"><h3>GitHub</h3><p>Code Hosting</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card vibe-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-magic"></i></div>
-                            <div class="flip-card-back"><h3>Vibe Coder</h3><p>Aesthetic Code</p></div>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 class="skill-category-title" style="margin-top: 3rem;">Communication</h3>
-                <div class="skills-grid">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-translate"></i></div>
-                            <div class="flip-card-back"><h3>English</h3><p>Professional</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-chat-dots"></i></div>
-                            <div class="flip-card-back"><h3>Hindi</h3><p>Native</p></div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><span style="font-size: 2.5rem; font-weight: bold; color: cornflowerblue;">ગુ</span></div>
-                            <div class="flip-card-back"><h3>Gujarati</h3><p>Native / Fluent</p></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="skills-grid" id="tools-skills-container"></div>
             </div>
         </section>
 
         <section id="projects" class="hidden-fade">
             <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects-grid">
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>Melodic-Cafe</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>Melodic-Cafe</h3>
-                                    <p>A personal music library application to listen to favorite voices anytime.</p>
-                                    <div class="project-skills">
-                                        <div class="skill-item"><i class="devicon-html5-plain"></i><span>HTML5</span></div>
-                                        <div class="skill-item"><i class="devicon-css3-plain"></i><span>CSS3</span></div>
-                                        <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JS</span></div>
-                                    </div>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://melodic.lovestoblog.com/" class="project-link" target="_blank">Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                                    <a href="https://github.com/anar291/Melodic-Cafe.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>Clima-Globe🌎</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>Clima-Globe</h3>
-                                    <p>Track live weather patterns and breaking news effortlessly.</p>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://clima.nichesite.org/" class="project-link" target="_blank">Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                                    <a href="https://github.com/anar291/Weather-site-.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>Genz-Clock</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>Genz-Clock</h3>
-                                    <p>An aesthetic digital time-keeper built for the modern web vibe.</p>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://genzclock.nichesite.org/" class="project-link" target="_blank">Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                                    <a href="https://github.com/anar291/Genz-Clock.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>To-DO List</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>To-DO List</h3>
-                                    <p>Powerful task manager using local browser storage for reliability.</p>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://todos.nichesite.org/" class="project-link" target="_blank">Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                                    <a href="https://github.com/anar291/random-shit.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>Calculator</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>Calculator</h3>
-                                    <p>Functional desktop calculator built with Python and Tkinter GUI.</p>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/anar291/Arnab-learning.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flip-card project-card-flip">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front project-front-face"><h3>Dating Site</h3></div>
-                            <div class="flip-card-back project-card">
-                                <div>
-                                    <h3>Dating Site</h3>
-                                    <p>Beautifully designed concept prioritizing clean aesthetics and responsiveness.</p>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://dating.nichesite.org/" class="project-link" target="_blank">Demo <i class="bi bi-box-arrow-up-right"></i></a>
-                                    <a href="https://github.com/anar291/Dating-Site.git" class="project-link" target="_blank">GitHub <i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2>Featured Projects</h2>
+                <div class="projects-grid" id="projects-container"></div>
             </div>
         </section>
 
         <section id="achievements" class="hidden-fade">
             <div class="container">
-                <h2>Certificates</h2>
-                <div class="skills-grid">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-trophy"></i></div>
-                            <div class="flip-card-back">
-                                <h3>E-Cell</h3>
-                                <p style="color: #eee; font-size: 0.9rem; margin: 0 0 10px 0;">Innovate 2025</p>
-                                <a href="YOUR_DRIVE_LINK_HERE" target="_blank" style="color: cornflowerblue; text-decoration: none; font-size: 0.8rem; border: 1px solid cornflowerblue; padding: 2px 8px; border-radius: 4px;">View <i class="bi bi-box-arrow-up-right"></i></a>
-                            </div>
+                <h2>Achievements</h2>
+                <div class="skills-grid" id="achievements-container"></div>
+            </div>
+        </section>
+
+        <section id="contact" class="hidden-fade">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info-card">
+                        <h3>Connect</h3>
+                        <p>Have a project idea or want to discuss AI? Drop a message!</p>
+
+                        <div class="info-row">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Vadodara, India</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>warmitul48@gmail.com</span>
+                        </div>
+
+                        <div class="social-links-row">
+                            <a href="https://www.linkedin.com/in/anar146/" target="_blank"><i
+                                    class="bi bi-linkedin"></i></a>
+                            <a href="https://github.com/anar146" target="_blank"><i class="bi bi-github"></i></a>
                         </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front"><i class="bi bi-trophy"></i></div>
-                            <div class="flip-card-back">
-                                <h3>Coding Winner</h3>
-                                <p style="color: #eee; font-size: 0.9rem; margin: 0 0 10px 0;">Innovate 2025</p>
-                                <a href="YOUR_DRIVE_LINK_HERE" target="_blank" style="color: cornflowerblue; text-decoration: none; font-size: 0.8rem; border: 1px solid cornflowerblue; padding: 2px 8px; border-radius: 4px;">View Proof <i class="bi bi-box-arrow-up-right"></i></a>
-                            </div>
+
+                    <form action="https://formspree.io/f/mgovvzye" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" required placeholder="Your Name">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" required placeholder="Message..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Transmission</button>
+                    </form>
                 </div>
             </div>
         </section>
+
     </main>
 
-    <footer id="contact" class="main-footer hidden-fade">
+    <footer class="main-footer">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/anar146/" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/anar146" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                <a href="mailto:warmitul48@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
-                <a href="tel:+918601526076" aria-label="Telephone"><i class="bi bi-telephone-fill"></i></a>
-            </div>
-            <div style="margin-bottom: 1.5rem;">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="anar291" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-            </div>
-            <p class="footer-credit">© 2025 Arnab Pandey. All rights reserved.</p>
+            <p>Designed by <strong>Arnab Pandey</strong> © 2025</p>
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
